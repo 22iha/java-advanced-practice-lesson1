@@ -1,7 +1,7 @@
 <%--
   GameAppクラス作成後、下記の記述が必要です。
-  <%@ page import="app.GameApp"%>
  --%>
+<%@ page import= "app.GameApp" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
@@ -14,7 +14,11 @@
     if (name != null && !name.isEmpty()) {
     	// このif分の中で、GameAppクラスのstartメソッドを呼び出し、
     	// 戻り値をresultに代入してください。
+    	GameApp p1 = new GameApp("何か");
+    	result = p1.start(name);
+    	
     }
+    
 %>
 <!DOCTYPE html>
 <html>
